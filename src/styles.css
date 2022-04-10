@@ -1,0 +1,272 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Color */
+:root {
+  --trianaP: #ff7f7c;
+  --bg-triana-main: #ffd4d4;
+  --bg-trianaP: #ffcdcc;
+  --triana-dark: #474747;
+  --triana-navbar-bg: #ffe2e2;
+  --triana-card: #ffe5e5;
+  --triana-card-p: #687375;
+  --triana-footer: #fdc7c7;
+}
+
+/* Button */
+.btn-lihat button {
+  background-color: var(--trianaP);
+  color: #fce4e4 !important;
+  letter-spacing: 1.3px;
+  transition: all 0.5s;
+}
+
+.btn-lihat button:hover {
+  background-color: #e05d5a;
+  color: #ffffff !important;
+}
+
+/* Active Navbar */
+.active {
+  color: var(--trianaP) !important;
+}
+
+.nav-item .nav-link:hover {
+  color: var(--trianaP) !important;
+}
+
+/* Main CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--bg-triana-main) !important;
+}
+
+.wraping {
+  background-color: var(--bg-triana-main);
+}
+
+.indent-triana .in-indent-triana {
+  background-color: var(--bg-trianaP);
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.15);
+}
+
+.indent-triana .in-indent-triana span {
+  color: var(--trianaP);
+}
+
+.hero-left {
+  z-index: 1;
+}
+
+.hero .hero-left h1 {
+  font-size: 48px !important;
+  color: var(--trianaP);
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+
+.hero .hero-left h4 {
+  color: var(--triana-dark);
+  font-size: 22px !important;
+}
+
+nav {
+  background-color: var(--triana-navbar-bg) !important;
+  box-shadow: 0px 1px 8px 2px rgba(0, 0, 0, 0.158);
+}
+
+.kartu .kartu-title h2 {
+  color: var(--trianaP) !important;
+  letter-spacing: 1.3px;
+}
+
+.kartu .kartu-title h2 span {
+  color: var(--triana-dark) !important;
+}
+
+.kartu-dalam {
+  background-color: var(--triana-card);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 320px !important;
+  border-radius: 20px;
+  transition: all 0.2s;
+  transform: scale(1);
+}
+
+.kartu-dalam:hover {
+  border: 1px solid #ffa5a4;
+  box-shadow: 1px 1px 10px 1px #ff9896;
+  transform: scale(1.02);
+}
+
+.kartu-dalam img {
+  top: -70px;
+}
+
+.kartu-dalam p {
+  font-size: 22px !important;
+  text-align: center;
+  color: var(--triana-card-p);
+  padding: 0px 40px;
+}
+
+.about .about-title h2 {
+  color: var(--trianaP);
+  letter-spacing: 1.3px;
+}
+
+.about .about-title h2 span {
+  color: var(--triana-dark) !important;
+}
+
+.about-part .about-one,
+.about-part .about-two,
+.about-part .about-three {
+  min-height: 280px !important;
+  background: linear-gradient(
+    90deg,
+    #ffe5e5 29.62%,
+    rgba(255, 229, 229, 0.26) 78.6%
+  );
+  border-radius: 15px;
+}
+
+.about-part .about-one p,
+.about-part .about-two p,
+.about-part .about-three p {
+  color: var(--triana-card-p);
+  letter-spacing: 1.1px;
+  word-spacing: 1.2px;
+}
+
+.testimoni .testimoni-title h2 {
+  color: var(--trianaP);
+  letter-spacing: 1.3px;
+  animation: colorChangeFront 5s infinite;
+}
+
+.testimoni .testimoni-title h2 span {
+  color: var(--triana-dark);
+  animation: colorChangeEnd 5s infinite;
+}
+
+.carousel-item p {
+  color: var(--triana-card-p);
+}
+
+.testi-in {
+  transition: all 0.3s ease-in;
+}
+
+.testi-in:hover {
+  transform: scale(1.06);
+  transition: all 0.3s ease-out;
+}
+
+.head-ornamen {
+  left: 0;
+  bottom: 0;
+}
+
+.footer-ornamen {
+  right: 0px;
+  top: 50px;
+}
+
+.sosmed {
+  z-index: 2;
+}
+
+footer {
+  background-color: var(--triana-footer);
+  font-weight: bold;
+}
+
+.bi-heart-fill {
+  color: rebeccapurple !important;
+}
+
+/* Responsive */
+/* Mobile S */
+@media screen and (max-width: 576px) {
+  .indent-triana .in-indent-triana span {
+    font-size: small !important;
+  }
+
+  .hero .hero-left h1 {
+    font-size: 32px !important;
+  }
+
+  .hero .hero-left h4 {
+    color: var(--triana-dark);
+    font-size: 16px !important;
+  }
+
+  .kartu-dalam {
+    min-height: 280px !important;
+    margin-bottom: 80px;
+  }
+
+  .kartu-dalam p {
+    font-size: 14px !important;
+  }
+
+  .about-part .about-one p,
+  .about-part .about-two p,
+  .about-part .about-three p {
+    font-size: 12px;
+  }
+
+  .footer a {
+    font-size: 12px !important;
+  }
+
+  .footer p {
+    font-size: 8px;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .hero .hero-left h4 {
+    font-size: 16px !important;
+  }
+  .kartu-dalam {
+    min-height: 300px !important;
+    margin-bottom: 60px;
+  }
+}
+
+@keyframes colorChangeFront {
+  0% {
+    color: var(--trianaP);
+  }
+  50% {
+    color: var(--triana-dark);
+  }
+  100% {
+    color: var(--trianaP);
+  }
+}
+
+@keyframes colorChangeEnd {
+  0% {
+    color: var(--triana-dark);
+  }
+  50% {
+    color: var(--trianaP);
+  }
+  100% {
+    color: var(--triana-dark);
+  }
+}
