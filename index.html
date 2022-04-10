@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link rel="shortcut icon" href="img/logo/logo.svg" type="image/x-icon" />
+
     <!-- Pure CSS -->
     <link rel="stylesheet" href="src/styles.css" />
 
@@ -25,7 +27,7 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <title>Triana Deco</title>
+    <title>Triana Deco & Craft</title>
   </head>
   <body>
     <!-- Start Navbar <MdScreen-->
@@ -246,7 +248,7 @@
     <!-- End Card Section -->
 
     <!-- Start About-->
-    <div id="about" class="container my-5 pt-5">
+    <div id="about" class="container about-section my-5 pt-5">
       <div class="about">
         <div class="about-title">
           <h2 class="fw-bold text-center">
@@ -261,11 +263,16 @@
           >
             <div
               class="one-left col-11 col-md-4 d-flex justify-content-center align-items-center"
+              data-aos="fade-right"
             >
               <img class="img-fluid" src="img/about/sokasi.svg" alt="" />
             </div>
             <div class="one-empty d-none d-lg-block col-1"></div>
-            <div class="one-right col-12 col-md-8 col-lg-5">
+            <div
+              class="one-right col-12 col-md-8 col-lg-5"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+            >
               <p class="text-center text-md-start">
                 Triana Deco n Craft menyediakan berbagai macam produk anyaman
                 lokal untuk menunjang kegiatan upacara agama seperti sodan,
@@ -280,7 +287,11 @@
             class="about-two mb-5 row d-flex flex-column-reverse flex-md-row justify-content-center align-items-center"
           >
             <div class="one-empty d-none d-lg-block col-2"></div>
-            <div class="one-right col-12 col-md-8 col-lg-5 pt-2">
+            <div
+              class="one-right col-12 col-md-8 col-lg-5 pt-2"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+            >
               <p class="text-center text-md-start">
                 (Sejarah ) Triana berdirii sejak tahun ... simply dummy text of
                 the printing and typesetting industry. Lorem Ipsum has been the
@@ -292,6 +303,7 @@
             <div class="one-empty d-none d-lg-block col-1"></div>
             <div
               class="one-left col-11 col-md-4 d-flex justify-content-center align-items-center"
+              data-aos="fade-left"
             >
               <img
                 class="img-fluid"
@@ -306,11 +318,16 @@
           >
             <div
               class="one-left col-12 col-md-4 d-flex justify-content-center align-items-center"
+              data-aos="fade-right"
             >
               <img class="img-fluid" src="img/about/map.svg" alt="" />
             </div>
             <div class="one-empty d-none d-lg-block col-1"></div>
-            <div class="one-right col-12 col-md-8 col-lg-5">
+            <div
+              class="one-right col-12 col-md-8 col-lg-5"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+            >
               <p class="text-center text-md-start">
                 Jl. Muding Sari Kavling 10 No 9 Kerobokan, Kuta Utara, Badung,
                 Bali (Triana Konveksi) +62 877-6025-8250
@@ -619,7 +636,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-      AOS.init();
+      AOS.init({
+        easing: 'ease', // default easing for AOS animations
+      });
     </script>
   </body>
 </html>
