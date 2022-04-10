@@ -1,3 +1,3 @@
-window.onload = function () {
-  document.getElementById('hide-load').style.display = 'none';
-};
+$(window).on('load', function () {
+  $('.hide-load-wrap').fadeOut('slow');
+});

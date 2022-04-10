@@ -31,10 +31,7 @@
   </head>
   <body>
     <!-- Start Loading -->
-    <div
-      class="loadingio-spinner-spin-j1u4v4ecgg hide-load-wrap"
-      id="hide-load"
-    >
+    <div class="loadingio-spinner-spin-j1u4v4ecgg hide-load-wrap">
       <div class="ldio-xn6wzvrip5 hide-load">
         <div><div></div></div>
         <div><div></div></div>
@@ -49,9 +46,16 @@
     </div>
     <style type="text/css">
       .hide-load-wrap {
+        min-width: 100%;
+        min-height: 100vh;
         position: absolute;
-        left: 45%;
-        top: 35%;
+        left: 0;
+        top: 0;
+        background-color: #ffd4d4 !important;
+        z-index: 999999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       @keyframes ldio-xn6wzvrip5 {
@@ -169,6 +173,8 @@
         transform: translateZ(0) scale(1);
         backface-visibility: hidden;
         transform-origin: 0 0; /* see note above */
+        left: 45%;
+        top: 35%;
       }
       .ldio-xn6wzvrip5 div {
         box-sizing: content-box;
